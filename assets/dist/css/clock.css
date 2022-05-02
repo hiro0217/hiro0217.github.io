@@ -3,9 +3,9 @@
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    color: #17D4FE;
-    background: black;
-    font-size: 40px;
+    color: #090a0a;
+    background: rgb(214, 210, 210);
+    font-size: 30px;
     font-family: Orbitron;
     letter-spacing: 7px;
     text-align: center;
