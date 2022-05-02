@@ -35,6 +35,20 @@
     </style>
     <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
 
+    <script type="text/javascript">
+        window.onload = function () {
+            setInterval("toggleSound()", 100);
+        }
+
+        function toggleSound() {
+            var music = document.getElementById("vd");//獲取ID
+
+            if (music.paused) { //判讀是否播放  
+                music.paused = false;
+                music.play(); //沒有就播放 
+            }
+        }
+    </script>
 
 </head>
 
@@ -118,8 +132,9 @@
 
                     <div class="card shadow-sm">
                         <div class="card-body">
-                            <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto"
-                                src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg"></audio>
+                            <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" id="vd"
+                                src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg">
+                            </audio>
 
                             <p class="card-text mt-3"> Courtesy of:
                                 https://simpleguics2pygame.readthedocs.io/en/latest/_static/links/snd_links.html</p>
