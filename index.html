@@ -32,10 +32,14 @@
                 font-size: 3.5rem;
             }
         }
+
+        a:hover {
+            color: red
+        }
     </style>
     <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         window.onload = function () {
             setInterval("toggleSound()", 100);
         }
@@ -48,7 +52,7 @@
                 music.play(); //沒有就播放 
             }
         }
-    </script>
+    </script> -->
 
 </head>
 
@@ -96,13 +100,17 @@
     </header>
 
     <main>
-
         <section class="py3 text-center container">
             <div class="row py-lg-3">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <img src="assets/img/son_of_man.jpg" class="bg-light rounded-circle" width="40%" height="60%">
                     <h1 class="fw-light">About</h1>
-                    <p class="lead text-muted">Student in NTU, enjoy reading, sporting and watching movies.</p>
+                    <p class="lead text-muted">Student in NTU,
+                        enjoy
+                        <a href="https://books.com.tw" target="_blank" class="text-decoration-none">reading</a>,
+                        <a href="https://nba.udn.com" target="_blank" class="text-decoration-none">sporting</a>,
+                        <a href="https://netflix.com" target="_blank" class="text-decoration-none">watching movies</a>.
+                    </p>
                 </div>
             </div>
         </section>
